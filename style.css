@@ -31,7 +31,7 @@ ul li::before {
     content: '';
     position: absolute;
     top: -15px;
-    width: 5px;
+    width: 10px;
     height: 15px;
     background-color: rgb(109, 109, 109);
     border-top-right-radius: 1px;
@@ -41,7 +41,7 @@ ul li::after {
     content: '';
     position: absolute;
     bottom: -15px;
-    width: 5px;
+    width: 10px;
     height: 15px;
     background-color: rgb(109, 109, 109);
     border-top-right-radius: 1px;
