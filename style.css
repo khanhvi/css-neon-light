@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    width: 100vh;
+    height: 100vh;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 5px;
+    height: 200px;
+    background-color: #fff;
+    margin: 50px;
+    float: left;
+}
+
+
+
+ul li::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    width: 5px;
+    height: 15px;
+    background-color: rgb(109, 109, 109);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+}
+ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    width: 5px;
+    height: 15px;
+    background-color: rgb(109, 109, 109);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+}
+
+ul li:nth-child(1){
+    box-shadow: 0 0 25px #f00,0 0 25px #f00,0 0 25px #f00,0 0 25px #f00;
+}
+
+ul li:nth-child(2){
+    box-shadow: 0 0 25px rgb(229, 255, 0),0 0 25px rgb(229, 255, 0),0 0 25px rgb(229, 255, 0),0 0 25px rgb(229, 255, 0);
+}
+
+ul li:nth-child(3){
+    box-shadow: 0 0 25px rgb(0, 255, 13),0 0 25px rgb(0, 255, 13),0 0 25px rgb(0, 255, 13),0 0 25px rgb(0, 255, 13);
+}
+
+ul li:nth-child(4){
+    box-shadow: 0 0 25px rgb(0, 238, 255),0 0 25px rgb(0, 238, 255),0 0 25px rgb(0, 238, 255),0 0 25px rgb(0, 238, 255);
+}
+
+ul li:hover {
+    box-shadow: none;
+}
